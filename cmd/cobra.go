@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"fmt"
+	"Serve/tools/color_print"
 	"github.com/spf13/cobra"
 	"os"
 )
@@ -14,7 +14,7 @@ var rootCmd = &cobra.Command{
 
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
-		fmt.Println(err)
+		color_print.ColorPrintln(color_print.Fail(err))
 		os.Exit(1)
 	}
 }
