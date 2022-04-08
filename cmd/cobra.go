@@ -12,6 +12,7 @@ var rootCmd = &cobra.Command{
 	Long: "wind-admin is command tool for admin-serve",
 }
 
+
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		color_print.ColorPrintln(color_print.Fail(err))
