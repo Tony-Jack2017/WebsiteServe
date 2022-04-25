@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"Serve/app/admin/router"
+	"Serve/app/router"
 	"Serve/tools/color_print"
 	"github.com/spf13/cobra"
 )

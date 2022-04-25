@@ -1,7 +1,7 @@
 package user
 
 import (
-	"Serve/app/admin/api/user_api"
+	"Serve/app/api/user_api"
 	"github.com/gin-gonic/gin"
 )
 

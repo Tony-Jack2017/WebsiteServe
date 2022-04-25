@@ -1,14 +1,14 @@
 package router
 
 import (
-	"Serve/app/admin/router/group/user"
+	"Serve/app/router/group/user"
 	"github.com/gin-gonic/gin"
 )
 
-func InitRouter() {
+func InitRouter(port string) {
 	r := gin.Default()
 	registerRouter(r)
-	r.Run(":8080")
+	r.Run(":" + port)
 }
 
 func registerRouter(r *gin.Engine) {
