@@ -7,9 +7,9 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "wind-admin",
-	Short: "wind-admin is shortcut of admin serve generator",
-	Long: "wind-admin is command tool for admin-serve",
+	Use:   "apis",
+	Short: "apis is shortcut of admin serve generator",
+	Long: "apis is command tool for admin-serve",
 }
 
 
