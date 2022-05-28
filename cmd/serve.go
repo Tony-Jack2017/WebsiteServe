@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"Serve/app/website/router"
+	router2 "Serve/common/router"
 	"Serve/tools/color_print"
 	"Serve/tools/read_config"
 	"github.com/spf13/cobra"
@@ -15,7 +15,7 @@ var serveCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		color_print.ColorPrintln(color_print.Success("serve is starting..."))
 		config := read_config.ReadConfig()
-		router.InitRouter(config.Application.Port)
+		router2.InitRouter("admin", config.Application.Port)
 	},
 }
 

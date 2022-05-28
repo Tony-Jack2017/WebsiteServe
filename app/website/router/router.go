@@ -6,6 +6,7 @@ import (
 )
 
 func InitRouter(port string) {
+	gin.ForceConsoleColor()
 	r := gin.Default()
 	registerUserRouter(r)
 	r.Run(":" + port)
