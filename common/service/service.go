@@ -7,6 +7,6 @@ import (
 type Service struct {
 	Orm *gorm.DB
 	Msg string
-	MsgId int
+	MsgId string
 	Error error
 }

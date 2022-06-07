@@ -10,6 +10,7 @@ import (
 func InitRouter(port string) {
 	gin.ForceConsoleColor()
 	gin.DefaultWriter = colorable.NewColorableStdout()
+
 	r := gin.Default()
 	r.Use(middleware.Cors())
 	registerAdminRouter(r)
